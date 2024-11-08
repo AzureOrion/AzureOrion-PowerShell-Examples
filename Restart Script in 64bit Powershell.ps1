@@ -1,4 +1,4 @@
-#region Restart Script in 64-bit powershell if necessary
+# Region Restart Script in 64-bit powershell if necessary
 
 If ($ENV:PROCESSOR_ARCHITEW6432 -eq "AMD64") {
     $scriptArguments = $null
@@ -25,4 +25,4 @@ If ($ENV:PROCESSOR_ARCHITEW6432 -eq "AMD64") {
     Exit $RunScript.ExitCode
 }
 
-#endregion Restart Script in 64-bit powershell if necessary
+# EndRegion Restart Script in 64-bit powershell if necessary
